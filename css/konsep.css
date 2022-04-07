@@ -1,0 +1,5 @@
+@media screen and (max-width:1200px) {
+    .card-container .card-text{
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,156 @@
+/* 450px hp 768px tablet  */
+*{
+  text-transform: capitalize;
+}
+html{scroll-behavior: smooth;}
+
+/* .card{
+  width: 20rem;
+  height: auto;
+  margin: 20px 26px;
+} */
+
+.card-about .card {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.card-container .card img{
+  opacity: 0.5;
+  width: 32rem;
+}
+.card img{opacity: 0.5;}
+.card img:hover{
+  opacity: 1;
+  transition: 1s linear;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.faded{
+  animation: normal;
+  animation-name: faded;
+  transition: 2s ease-in;
+}
+
+footer{
+  margin:20px auto ;
+}
+  /* animasi */
+@keyframes faded {
+  from{display: none;}
+  to{background-color: aqua;}
+}
+
+.w-80{
+  width: 80%;
+  height: auto;
+}
+.bg-grey{
+  background-color: grey;
+}
+
+.video{
+  width: 60%;
+  margin:auto;
+}
+
+.fs-res {
+  font-size: 0.5rem;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+/* untuk teks materi di tiap chapter gunakkan h5 text-info */
+/* hp */
+
+
+
+/* 1200px handphone 670 tablet 1000=50% box-sizing: border-box; */
+@media screen and(max-width:600px){
+  *{
+    width: 100%;
+    height: auto;
+    letter-spacing: 1.6;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .btn{
+    display: none;
+  }
+
+  .card-body .card-link-2 .card-text ,.card-title{
+    display:none;
+  }
+  
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-link{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container .card{
+    display: inline-block;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  footer .nav-link{
+    width: 100%;
+    font-size:100%;
+    margin-top: 3rem;
+    margin-bottom:12px;
+    background: whitesmoke;
+  }
+
+ 
+
+}/* end responsive tablet */
+ @media screen and (max-width:768px){
+  *{
+    height: auto;
+  }
+  .navbar-nav .nav-link{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container .card{
+    display: inline-block;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  footer .nav-link{
+    width: 100%;
+    font-size:100%;
+    margin-top: 3rem;
+    margin-bottom:12px;
+    background: whitesmoke;
+  }
+
+}/* end responsive design pc */
