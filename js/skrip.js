@@ -63,7 +63,7 @@ class Database{
    }
 
    static lastUpdate(){
-       let updated="Terakhir Diupdate minggu pahing , 12 desember 2021 Pukul 10 : 45 pagi";
+       let updated="Terakhir Diupdate rabu kliwon, 08 juni 2022 Pukul 10 : 42 pagi";
        document.getElementById('update?').innerHTML=updated;
    }
    
